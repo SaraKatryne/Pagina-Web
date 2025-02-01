@@ -1,0 +1,710 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset e configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Variáveis */
+:root {
+    --Roxo-1: #6959CD;
+    --Roxo-2: #836FFF;
+    --Violeta: #EE82EE;
+    --color-p: #a1a1a1;
+    --color-p-2: #868585;
+}
+
+/* Estilos base */
+body {
+    font-family: "Poppins", serif;
+}
+
+.background-roxo {
+    background: var(--Roxo-1);
+}
+
+/* Classes reutilizáveis */
+.container {
+    max-width: 1440px;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+section,
+footer {
+    padding: 2.7rem 0;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.ul {
+    display: flex;
+    align-items: center;
+}
+
+.ul li {
+    margin: 0 35px;
+    font-size: 15px;
+}
+
+.ul li a {
+    color: white;
+    transition: 0.3s ease;
+}
+
+/* Main */
+main .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.main-text {
+    width: 50%;
+    color: white;
+}
+
+.main-text h1 {
+    font-size: 4.5rem;
+}
+
+.main-img {
+    width: 50%;
+}
+
+.main-img img {
+    width: 100%;
+}
+
+/* Menu icon */
+.menu-icon {
+    display: none;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* Introdução */
+.introdução {
+    background: #f7bdf7;
+}
+
+.introdução .container {
+    display: flex;
+    align-items: center;
+}
+
+.introdução .introdução-text {
+    color: rgb(112, 6, 6);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+/* Section desafios */
+.desafios .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    gap: 2rem;
+}
+
+.desafios .card {
+    width: 30%;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 48px 0;
+    transition: 0.3s;
+    background: white;
+}
+
+.desafios .card:hover {
+    box-shadow: 0 10px 67px 8px #bdb6ee;
+    transform: translateY(-5px);
+}
+
+.desafios .card img {
+    width: 80px;
+}
+
+.desafios .card .titulo {
+    margin: 13px 0;
+    font-weight: 600;
+    align-items: center;
+    color: var(--Roxo-2);
+    font-size: 1.5rem;
+}
+
+.desafios .card .p,
+.desafios .card p {
+    color: var(--color-p-2);
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+/* Section Relaxar */
+.relaxar .container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.relaxar .relaxar-img {
+    width: 100%;
+}
+
+.relaxar .relaxar-img img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.relaxar .relaxar-text {
+    width: 100%;
+}
+
+.relaxar .relaxar-text h2 {
+    font-size: 2.5rem;
+    color: var(--Roxo-1);
+    line-height: 1.2;
+}
+
+.relaxar .relaxar-text p {
+    margin: 20px 0;
+    color: var(--color-p);
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.relaxar .relaxar-text p b {
+    color: black;
+    font-size: 1rem;
+}
+
+/* Tabela de Recursos */
+.tabela-recursos {
+    background: white;
+    padding: 2.7rem 0;
+}
+
+.tabela-recursos h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--Roxo-1);
+    margin-bottom: 2rem;
+}
+
+.tabela-recursos table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: left;
+    font-size: 1rem;
+    color: var(--color-p-2);
+}
+
+.tabela-recursos th,
+.tabela-recursos td {
+    padding: 15px 10px;
+    border: 1px solid #ddd;
+}
+
+.tabela-recursos th {
+    background-color: var(--Roxo-2);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tabela-recursos td {
+    background-color: #f9f9f9;
+}
+
+.tabela-recursos tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+.tabela-recursos a {
+    color: var(--Roxo-1);
+    text-decoration: underline;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.tabela-recursos a:hover {
+    text-decoration: none;
+    color: var(--Violeta);
+}
+
+/* Estilos da página Sobre */
+.sobre-conteudo {
+    padding: 2rem 0;
+    background-color: #f4f4f4;
+}
+
+.sobre-conteudo .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.sobre-conteudo h1 {
+    color: var(--Roxo-2);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.8rem;
+}
+
+.sobre-texto p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.nossos-objetivos {
+    margin: 2rem 0;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.nossos-objetivos h2 {
+    color: var(--Roxo-1);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #b87abd;
+    padding-bottom: 0.5rem;
+}
+
+.nossos-objetivos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nossos-objetivos ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 30px;
+}
+
+.nossos-objetivos ul li:before {
+    content: '✿';
+    color: var(--Violeta);
+    position: absolute;
+    left: 0;
+}
+
+.nossos-objetivos ul li:last-child {
+    border-bottom: none;
+}
+
+.compromisso {
+    background-color: var(--Roxo-2);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.compromisso h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+/* Links */
+a:link, a:visited {
+    color: var(--color-p);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+  
+a:hover, a:active {
+    background-color: #7f2f85;
+    padding: 2.5px 5.2px;
+    border-radius: 0 0 0 12px;
+}
+
+/* Responsividade - Telas grandes */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .main-text h1 {
+        font-size: 3.8rem;
+    }
+
+    .desafios .card {
+        padding: 25px;
+    }
+
+    .sobre-conteudo h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Responsividade - Tablets e telas médias */
+@media (max-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .main-text h1 {
+        font-size: 3.2rem;
+    }
+
+    .relaxar .relaxar-text h2 {
+        font-size: 2.2rem;
+    }
+
+    .desafios .container {
+        gap: 20px;
+    }
+
+    .sobre-conteudo .container {
+        max-width: 720px;
+    }
+
+    .sobre-conteudo h1 {
+        font-size: 2.3rem;
+    }
+}
+
+/* Responsividade - Menu Mobile e Layout */
+@media (max-width: 960px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .ul {
+        position: fixed;
+        background: var(--Roxo-1);
+        top: 0;
+        width: 80%;
+        height: 100%;
+        right: -100%;
+        transition: 0.4s ease-in-out;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .ul.ativo {
+        right: 0;
+    }
+
+    .ul li {
+        opacity: 0;
+        transform: translateX(50px);
+        transition: 0.4s ease-in-out;
+        margin: 20px 0;
+        font-size: 20px;
+    }
+
+    .ul.ativo li {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    main .container {
+        flex-direction: column;
+    }
+
+    .main-text, .main-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .introdução .container {
+        flex-direction: column;
+    }
+
+    .desafios .container {
+        flex-direction: column;
+    }
+
+    .desafios .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .relaxar .container {
+        flex-direction: column-reverse;
+    }
+}
+
+/* Responsividade - Tablets menores */
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+        padding: 0 4%;
+    }
+
+    nav {
+        padding: 15px 0;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .main-text h1 {
+        font-size: 2.8rem;
+    }
+
+    .main-img {
+        margin-top: 30px;
+    }
+
+    .introdução .introdução-text {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .relaxar .relaxar-text h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .sobre-conteudo h1 {
+        font-size: 2.2rem;
+    }
+
+    .nossos-objetivos, .compromisso {
+        margin: 1.5rem 0;
+        padding: 1.2rem;
+    }
+}
+
+/* Responsividade - Dispositivos móveis */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 3%;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .main-text h1 {
+        font-size: 2.3rem;
+    }
+
+    .introdução .introdução-text {
+        font-size: 1.1rem;
+    }
+
+    .desafios .card {
+        padding: 20px;
+        border-radius: 32px 0;
+    }
+
+    .relaxar .relaxar-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .relaxar .relaxar-text p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .sobre-conteudo h1 {
+        font-size: 1.8rem;
+    }
+
+    .nossos-objetivos h2 {
+        font-size: 1.4rem;
+    }
+
+    .nossos-objetivos ul li {
+        font-size: 0.9rem;
+        padding: 0.4rem 0 0.4rem 25px;
+    }
+
+    .compromisso {
+        padding: 1rem;
+    }
+
+    .compromisso h2 {
+        font-size: 1.4rem;
+    }
+
+    .tabela-recursos {
+        overflow-x: auto;
+    }
+
+    .tabela-recursos table {
+        font-size: 0.85rem;
+    }
+}
+
+/* Responsividade - Telas muito pequenas */
+@media (max-width: 375px) {
+    .main-text h1 {
+        font-size: 2rem;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .ul li {
+        margin: 15px 0;
+        font-size: 18px;
+    }
+
+    .desafios .card {
+        padding: 15px;
+        border-radius: 24px 0;
+    }
+
+    .relaxar .relaxar-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .sobre-conteudo h1 {
+        font-size: 1.6rem;
+    }
+
+    .sobre-texto p {
+        font-size: 0.9rem;
+    }
+
+    .nossos-objetivos ul li {
+        font-size: 0.85rem;
+        padding: 0.4rem 0 0.4rem 20px;
+    }
+}
+
+/* Estilos para a página de Dicas de Autocuidado */
+.introducao-dicas {
+    background: var(--Roxo-1);
+    color: white;
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+.introducao-dicas h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.introducao-dicas p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Estilo dos Cards de Dicas */
+.cards-dicas .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.card-dica {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-dica:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-dica img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.card-dica h3 {
+    color: var(--Roxo-2);
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.card-dica p {
+    color: var(--color-p-2);
+    line-height: 1.5;
+}
+
+/* Checklist de Autocuidado */
+.checklist-autocuidado {
+    background: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.checklist-autocuidado h2 {
+    font-size: 2.5rem;
+    color: var(--Roxo-1);
+    margin-bottom: 1rem;
+}
+
+.checklist-autocuidado ul {
+    list-style: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.checklist-autocuidado li {
+    background: #f1f1f1;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    color: var(--Roxo-2);
+}
+
+/* Responsividade */
+@media (max-width: 960px) {
+    .cards-dicas .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-dica {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .introducao-dicas h1 {
+        font-size: 2.2rem;
+    }
+
+    .checklist-autocuidado h2 {
+        font-size: 2rem;
+    }
+}
