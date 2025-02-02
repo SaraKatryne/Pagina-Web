@@ -714,3 +714,19 @@ a:hover, a:active {
         font-size: 2rem;
     }
 }
+
+/* Rodapé */
+footer {
+    background-color: var(--Roxo-1);  
+    color: white;                     
+    text-align: center;              
+    padding: 15px 0;                  
+    font-size: 1rem;                 
+    margin-top: 20px;                 
+}
+
+footer p {
+    margin: 0;                       
+    font-weight: 500;                
+}
+
