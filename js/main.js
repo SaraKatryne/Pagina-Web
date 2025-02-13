@@ -18,3 +18,4 @@ menuIcon.addEventListener('click',()=>{
         menuImage.src = menuCloseIcon;
     }
 });
+
