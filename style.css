@@ -402,15 +402,11 @@ a:hover, a:active {
         display: block;
     }
 
-    .menu-icon {
-        display: block;
-    }
-
     .ul {
         position: fixed;
         background: var(--Roxo-1);
         top: 60px;
-        width: 20%; 
+        width: 32%; 
         height: auto; 
         right: -100%;
         transition: 0.4s ease-in-out;
@@ -423,7 +419,7 @@ a:hover, a:active {
     }
 
     .ul.ativo {
-        right: 10px;
+        right: 15px;
         display: flex; 
         justify-content: center;
         align-items: center;
