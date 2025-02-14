@@ -19,3 +19,20 @@ menuIcon.addEventListener('click',()=>{
     }
 });
 
+// Exibir alerta ao enviar o formulário
+document.getElementById("formDepoimento").addEventListener("submit", function(event) {
+    event.preventDefault(); // Evita o envio real do formulário
+    alert("Seu depoimento foi enviado com sucesso! Obrigado por compartilhar sua experiência.");
+    this.reset(); // Limpa os campos após o envio
+});
+
+// Animação ao passar o mouse sobre os cards de vídeo
+document.querySelectorAll(".video-card").forEach(card => {
+    card.addEventListener("mouseover", () => {
+        card.style.transform = "scale(1.05)";
+        card.style.transition = "transform 0.3s ease";
+    });
+    card.addEventListener("mouseout", () => {
+        card.style.transform = "scale(1)";
+    });
+});

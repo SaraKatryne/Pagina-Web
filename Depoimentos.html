@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depoimentos - Mães Acolhidas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/icon" href="./img/icon_mãe.png">
+</head>
+<body>
+    <div class="background-roxo">
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="logo">Mães Acolhidas</div>
+                    <ul class="ul">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="dicas.html">Dicas</a></li>
+                        <li><a href="depoimentos.html" class="active">Depoimentos</a></li>
+                    </ul>
+                    <div class="menu-icon">
+                        <img src="img/menu.png" alt="Menu">
+                    </div>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <div class="container">
+                <section class="depoimentos-form">
+                    <h2>Compartilhe sua experiência</h2>
+                    <p>Conte sua vivência como mãe <br> ou <br>Deixe sua opinião sobre a página.</p>
+                    <form id="formDepoimento">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                        
+                        <label for="mensagem">Depoimento:</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                        
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+    </div>
+    <section class="videos-depoimentos">
+        <div class="container">
+            <h2>Histórias De Mães</h2>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="video-card">
+                        <h3>Vídeo 1</h3>
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/bp_hA59BZMw?si=L5xf5cAtGpdTedl1" title="YouTube video player"frameborder="0" allowfullscreen></iframe>
+                        <!-- Botão Animado -->
+                        <button class="button-with-icon" onclick="window.open('https://youtu.be/bp_hA59BZMw?si=XAVJeJrD8BQwHpl1', '_blank')">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="Play" class="icon">
+                                <path d="M12 39c-.549 0-1.095-.15-1.578-.447A3.008 3.008 0 0 1 9 36V12c0-1.041.54-2.007 1.422-2.553a3.014 3.014 0 0 1 2.919-.132l24 12a3.003 3.003 0 0 1 0 5.37l-24 12c-.42.21-.885.315-1.341.315z" fill="#ffffff"></path>
+                            </svg>
+                            <span class="text">YouTube</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="video-card">
+                        <h3>Vídeo 2</h3>
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/riVUidsF2qo?si=NSrefhM0x-5M9mz6" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                        <button class="button-with-icon" onclick="window.open('https://www.youtube.com/watch?v=seu_codigo_do_video2', '_blank')">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="Play" class="icon">
+                                <path d="M12 39c-.549 0-1.095-.15-1.578-.447A3.008 3.008 0 0 1 9 36V12c0-1.041.54-2.007 1.422-2.553a3.014 3.014 0 0 1 2.919-.132l24 12a3.003 3.003 0 0 1 0 5.37l-24 12c-.42.21-.885.315-1.341.315z" fill="#ffffff"></path>
+                            </svg>
+                            <span class="text">YouTube</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="video-card">
+                        <h3>Vídeo 3</h3>
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/Ww4DHMQ7Xz4?si=AZaaJ8pzdPH1mJu1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                        <button class="button-with-icon" onclick="window.open('https://youtu.be/Ww4DHMQ7Xz4?si=AZaaJ8pzdPH1mJu1', '_blank')">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="Play" class="icon">
+                                <path d="M12 39c-.549 0-1.095-.15-1.578-.447A3.008 3.008 0 0 1 9 36V12c0-1.041.54-2.007 1.422-2.553a3.014 3.014 0 0 1 2.919-.132l24 12a3.003 3.003 0 0 1 0 5.37l-24 12c-.42.21-.885.315-1.341.315z" fill="#ffffff"></path>
+                            </svg>
+                            <span class="text">YouTube</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sara Katryne.<br> Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

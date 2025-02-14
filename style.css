@@ -346,7 +346,6 @@ a:link, a:visited {
 }
   
 a:hover, a:active {
-    background-color: #7f2f85;
     padding: 2.5px 5.2px;
     border-radius: 0 0 0 12px;
 }
@@ -876,4 +875,184 @@ footer p {
     .social-icon {
         width: 30px;
     }
+}
+
+/* Estilos da página Depoimentos */
+.depoimentos-form {
+    background: white;
+    padding: 2.5rem 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.depoimentos-form h2 {
+    color: var(--Roxo-1);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.depoimentos-form p {
+    font-size: 1.1rem;
+    color: var(--color-p-2);
+    margin-bottom: 1.5rem;
+}
+
+.depoimentos-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.depoimentos-form label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--Roxo-2);
+}
+
+.depoimentos-form input, 
+.depoimentos-form textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid var(--color-p);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.depoimentos-form button {
+    background: var(--Roxo-1);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.depoimentos-form button:hover {
+    background: var(--Roxo-2);
+}
+
+/* Estilos para os vídeos */
+.videos-depoimentos {
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.videos-depoimentos h2 {
+    color: var(--Roxo-1);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Contêiner de vídeos - Responsivo */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Distância entre os vídeos */
+}
+
+/* Cada card de vídeo */
+.video-card {
+    flex: 1 1 calc(33.333% - 30px); /* 3 colunas em telas grandes */
+    display: block;
+    margin-bottom: 30px;
+}
+
+.video-card iframe {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.button-with-icon {
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d32f2f;
+    font-family: "Istok Web", sans-serif;
+    letter-spacing: 1px;
+    padding: 0 12px;
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: normal;
+    border-radius: 3px;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+    transform: translateY(0px);
+    position: relative;
+    box-shadow:
+        inset 0 30px 30px -15px rgba(255, 255, 255, 0.1),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 1px 20px rgba(0, 0, 0, 0),
+        0 3px 0 #d32f2f,
+        0 3px 2px rgba(0, 0, 0, 0.2),
+        0 5px 10px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.1);
+    background: #e53935;
+    color: white;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+    transition: 150ms all ease-in-out;
+}
+
+.button-with-icon .icon {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    transition: all 0.5s ease-in-out;
+}
+
+.button-with-icon:active {
+    transform: translateY(3px);
+    box-shadow:
+        inset 0 16px 2px -15px rgba(0, 0, 0, 0),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.15),
+        inset 0 1px 20px rgba(0, 0, 0, 0.1),
+        0 0 0 #d32f2f,
+        0 0 0 2px rgba(255, 255, 255, 0.5),
+        0 0 0 rgba(0, 0, 0, 0),
+        0 0 0 rgba(0, 0, 0, 0);
+}
+
+.button-with-icon:hover .text {
+    transform: translateX(85px);
+}
+
+.button-with-icon:hover .icon {
+    transform: translate(27px);
+    scale: 1.5;
+}
+
+.text {
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+ 
+/* Responsividade */
+@media (max-width: 768px) {
+    .depoimentos-form {
+        width: 90%;
+    }
+
+    .depoimentos-form input, 
+    .depoimentos-form textarea {
+        width: 100%;
+    }
+
+    .video-card {
+        flex: 1 1 100%; /* Coloca os vídeos em uma única coluna em telas pequenas */
+        margin-bottom: 20px; /* Ajusta o espaçamento entre os vídeos */
+    }
+
+
 }
