@@ -36,3 +36,5 @@ document.querySelectorAll(".video-card").forEach(card => {
         card.style.transform = "scale(1)";
     });
 });
+
+
