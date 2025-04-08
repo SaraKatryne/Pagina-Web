@@ -31,7 +31,7 @@ A proposta é oferecer um espaço de acolhimento, empatia e apoio, utilizando a 
 
 ## 📁 Como acessar
 Você pode acessar o projeto hospedado via GitHub Pages:  
-👉 [https://seuusuario.github.io/Pagina-Web](https://seuusuario.github.io/Pagina-Web)  
+👉 https://sarakatryne.github.io/Pagina-Web/
 
 ## 🙋‍♀️ Feito por
 **Sara Katryne**  
